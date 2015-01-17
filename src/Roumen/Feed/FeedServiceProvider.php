@@ -2,6 +2,8 @@
 
 use Illuminate\Support\ServiceProvider;
 
+use View;
+
 class FeedServiceProvider extends ServiceProvider {
 
     /**
