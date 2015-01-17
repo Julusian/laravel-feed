@@ -29,6 +29,8 @@ class FeedServiceProvider extends ServiceProvider {
     {
         //$this->package('roumen/feed');
 
+        View::addNamespace('feed', __DIR__ . '/../../views');
+        
         $this->app['feed'] = $this->app->share(function($app)
         {
             return new Feed();
